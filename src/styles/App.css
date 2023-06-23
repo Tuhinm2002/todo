@@ -1,0 +1,142 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+}
+.App .entry {
+  display: flex;
+}
+.App .entry label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+}
+.App .entry .btn {
+  flex-direction: row;
+  background-color: hotpink;
+  color: aliceblue;
+  height: 50px;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.App .items {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.App .items .item {
+  display: flex;
+  flex-direction: column;
+  background-color: #9575DE;
+  align-items: center;
+  min-height: 50vh;
+  box-shadow: 0.5rem 0.5rem #9BCDD2;
+  border-radius: 10px;
+}
+.App .items .item .invisibleA {
+  width: 500px;
+}
+.App .items .done {
+  display: flex;
+  flex-direction: column;
+  background-color: #E966A0;
+  align-items: center;
+  box-shadow: 0.5rem 0.5rem #FFDEDE;
+  border-radius: 10px;
+}
+.App .items .done .invisibleB {
+  width: 500px;
+}
+
+#textInput {
+  width: 400px;
+  height: 30px;
+  margin-top: 20px;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+}
+
+@media screen and (max-width: 700px) {
+  #textInput {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+  .App .entry {
+    flex-direction: column;
+  }
+  .App .entry .btn {
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 20px;
+  }
+  .App .items {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .App .items .item {
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .App .items .done {
+    flex-direction: column;
+    min-height: 50vh;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .App .items .done {
+    margin-left: 40px;
+  }
+}
+.container {
+  display: flex;
+  margin-top: 70px;
+  background-color: #0E2954;
+  color: #9BCDD2;
+  width: 400px;
+  height: 50px;
+  font-size: large;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem #9BCDD2;
+}
+.container .icons {
+  margin-left: auto;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.container .icons .icon {
+  margin-left: 10px;
+}
+.container .textItem {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 70%;
+  }
+  .container .icons {
+    margin-right: 5%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0E2954;
+}
+
+/*# sourceMappingURL=App.css.map */

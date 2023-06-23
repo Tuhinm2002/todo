@@ -1,0 +1,116 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    .entry{
+        display: flex;
+        label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+    }
+    .btn{
+        flex-direction: row;
+        background-color: hotpink;
+        color: aliceblue;
+        height: 50px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        cursor: pointer;
+
+    }
+}
+    .items{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        .item{
+            display: flex;
+            flex-direction: column;
+            background-color: #9575DE;
+            align-items: center;
+            min-height: 50vh;
+            box-shadow: 0.5rem 0.5rem #9BCDD2;
+            border-radius: 10px;
+
+            .invisibleA{
+                width: 500px;
+            }
+        }
+        .done{
+            display: flex;
+            flex-direction: column;
+            background-color: #E966A0;
+            align-items: center;
+            box-shadow: 0.5rem 0.5rem #FFDEDE;
+            border-radius: 10px;
+
+            .invisibleB{
+                width: 500px;
+            }
+        }
+    }
+}
+
+#textInput{
+    width: 400px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: large;
+    border-radius: 10px;
+    border: none; 
+}
+
+@media screen and (max-width:700px){
+
+    #textInput{
+        max-width: 70%;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    .App{
+        .entry{
+            flex-direction: column;
+            .btn{
+                margin-left:30%;
+                margin-right: 20%;
+                margin-top: 20px;
+            }
+
+        }
+        .items{
+            flex-direction: column;
+            max-width: 90%;
+        .item{
+        margin-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+        .done{
+            flex-direction: column;
+            min-height: 50vh;
+            margin-top: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+    } 
+}
+
+@media  screen and (min-width:800px) {
+    .App{
+        .items{
+            .done{
+                margin-left: 40px;
+            }
+        }
+    }
+}

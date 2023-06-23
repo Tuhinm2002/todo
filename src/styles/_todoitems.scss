@@ -1,0 +1,32 @@
+.container{
+    display : flex;
+    margin-top: 70px;
+    background-color: #0E2954;
+    color: #9BCDD2;
+    width: 400px;
+    height: 50px;
+    font-size: large;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0.5rem 0.5rem #9BCDD2;
+    .icons{
+        margin-left: auto;
+        margin-right: 5px;
+        cursor: pointer;
+        .icon{
+            margin-left: 10px;
+    }
+    }
+    .textItem{
+        margin-left: 10px; 
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .container{
+            max-width: 70%;
+            .icons{
+                margin-right: 5%;
+            }
+    }
+}
